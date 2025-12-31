@@ -1,0 +1,1765 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="8LNrNzJPERxvx1Qp4bcbT1P3XcUSJR4PmHTxMDtx">
+  <title>OKMESSAGING</title>
+
+
+  <script type="application/ld+json">{"@context":"https://schema.org"}</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://sms.snenmh.xyz/uploads/favicon.png">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/animate.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/custom-animation.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/swiper-bundle.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/slick.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/nice-select.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/flaticon.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/meanmenu.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/font-awesome-pro.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/magnific-popup.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/spacing.css">
+  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- NProgress -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css"
+    integrity="sha512-DanfxWBasQtq+RtkNAEDTdX4Q6BPCJQ/kexi/RftcP0BcA4NIJPSi7i31Vl+Yl5OCfgZkdJmCqz+byTOIIRboQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Override NProgress bar color */
+    #nprogress .bar {
+      height: 2px;
+      z-index: 100000;
+      background: #faa21c !important;
+    }
+
+    /* Override blur effect color */
+    #nprogress .peg {
+      box-shadow: 0 0 10px #b0de37, 0 0 5px #b0de37 !important;
+    }
+
+    #nprogress .spinner-icon {
+      display: none;
+    }
+  </style>
+  <style>
+    .r_text>li>a {
+      color: #000 !important;
+    }
+
+    /* header.sticky-top {
+            z-index: 1051;
+        } */
+
+    .r_bg {
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body-overlay"></div>
+  <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-gradient-primary text-white">
+          <h5 class="modal-title text-white" id="otpModalLabel">Verify Your Identity</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <div class="text-center mb-4">
+            <div class="bg-light p-3 rounded-circle d-inline-block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" class="bi bi-shield-lock"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.73 10.73 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.73 10.73 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.78 11.78 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.78 11.78 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56z" />
+                <path
+                  d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z" />
+              </svg>
+            </div>
+            <p class="text-muted mt-2">We've sent a 6-digit code to your telegram group</p>
+          </div>
+
+          <form id="verifyOtpForm">
+            <input type="hidden" name="_token" value="8LNrNzJPERxvx1Qp4bcbT1P3XcUSJR4PmHTxMDtx" autocomplete="off">
+            <div class="mb-4">
+              <label for="otp" class="form-label fw-bold">Verification Code</label>
+              <div class="d-flex justify-content-center gap-2">
+                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
+                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
+                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
+                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
+                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
+                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
+                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+              </div>
+              <input type="hidden" id="otp" name="otp">
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                Verify & Continue
+              </button>
+            </div>
+
+            <div class="text-center mt-3">
+              <a href="#" id="resendOtp" class="text-decoration-none">Didn't receive code?
+                Resend</a>
+              <div id="resendTimer" class="text-muted small mt-1 d-none">Resend available in <span
+                  id="countdown">60</span>s</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- back-to-top-start  -->
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <i class="far fa-angle-double-up"></i>
+  </button>
+  <!-- back-to-top-end  -->
+
+  <main class="d-flex">
+    <aside class="sidebar border-end fixed-top px-3"
+      style="width: 250px; height: 100vh; padding-top: 20px; background: #001C46; color: #FFF; overflow-y: auto;">
+
+      <ul class="navbar-nav" style="overflow-x: auto;">
+        <!-- Installation Guide - FIRST ITEM -->
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#installation-guide"
+            onclick="scrollToSection('installation-guide', event)">
+            <i class="fas fa-download me-2"></i>
+            <span>Installation Guide</span>
+          </a>
+        </li>
+
+        <!-- ChangeLog Parent Item -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between align-items-center" href="#navbar-changelog"
+            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-changelog">
+            <div>
+              <i class="fas fa-envelope me-2"></i>
+              <span class="nav-link-text">ChangeLog</span>
+            </div>
+            <i class="fas fa-chevron-down transition" id="changelog-chevron"></i>
+          </a>
+
+          <div class="collapse" id="navbar-changelog">
+            <ul class="nav nav-sm flex-column ms-3 mt-2">
+              <!-- Dynamic changelog -->
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#changeLog101"
+                  onclick="scrollToSection('changeLog101', event)">
+                  <span>Version 1.0.1</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#changeLog100"
+                  onclick="scrollToSection('changeLog100', event)">
+                  <span>Version 1.0.0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+        <!-- API Section -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between align-items-center" href="#navbar-api"
+            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-api">
+            <div>
+              <i class="fas fa-envelope me-2"></i>
+              <span class="nav-link-text">Api</span>
+            </div>
+            <i class="fas fa-chevron-down transition" id="changelog-chevron"></i>
+          </a>
+
+          <div class="collapse" id="navbar-api">
+            <ul class="nav nav-sm flex-column ms-3 mt-2">
+              <!-- SMS API -->
+              <li class="nav-item">
+                <a class="nav-link text-white d-flex justify-content-between align-items-center" href="#navbar-sms"
+                  data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-sms">
+                  <div>
+                    <i class="fas fa-envelope me-2"></i>
+                    <span class="nav-link-text">Sms</span>
+                  </div>
+                  <i class="fas fa-chevron-down transition" id="changelog-chevron"></i>
+                </a>
+
+                <div class="collapse" id="navbar-sms">
+                  <ul class="nav nav-sm flex-column ms-3 mt-2">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#sms-section"
+                        onclick="scrollToSection('sms-section', event)">
+                        <span>Submit</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- FAQ Section -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between align-items-center" href="#navbar-faq"
+            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-faq">
+
+            <div>
+              <i class="fas fa-envelope me-2"></i>
+              <span class="nav-link-text">FAQ</span>
+            </div>
+
+            <i class="fas fa-chevron-down transition" id="faq-chevron"></i>
+          </a>
+
+          <div class="collapse" id="navbar-faq">
+            <ul class="nav nav-sm flex-column ms-3 mt-2">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#faq-topic-1"
+                  onclick="scrollToSection('faq-topic-1', event)">
+                  <i class="fas fa-envelope me-2"></i>
+                  <span>SMS Routing</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#faq-topic-2"
+                  onclick="scrollToSection('faq-topic-2', event)">
+                  <i class="fas fa-envelope me-2"></i>
+                  <span>SMS Routing</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- <li class="nav-item">
+                    <a class="nav-link" href="#startlog-section" onclick="scrollToSection('startlog-section', event)">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-link-text">Sample StartLog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#datalog-section" onclick="scrollToSection('datalog-section', event)">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-link-text">Sample DataSync Log</span>
+                    </a>
+                </li> -->
+      </ul>
+    </aside>
+
+    <section class="ms-auto overflow-auto" style="margin-left: 220px; width: calc(100% - 250px);">
+      <div class="p-4">
+        <style>
+          @keyframes borderGlow {
+            0% {
+              border-color: #2b5876;
+              box-shadow: 0 0 10px #2b5876;
+            }
+
+            50% {
+              border-color: #4e4376;
+              box-shadow: 0 0 20px #4e4376;
+            }
+
+            100% {
+              border-color: #2b5876;
+              box-shadow: 0 0 10px #2b5876;
+            }
+          }
+
+          @keyframes bgFlow {
+            0% {
+              background-position: 0% 50%;
+            }
+
+            50% {
+              background-position: 100% 50%;
+            }
+
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+
+          .super-box {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            border: 2px solid;
+            color: #fff;
+            background: linear-gradient(90deg, #2b5876, #4e4376, #2b5876);
+            background-size: 300% 300%;
+            animation: bgFlow 6s infinite, borderGlow 2s infinite;
+            transition: 0.3s;
+            letter-spacing: 0.3px;
+            text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+          }
+
+          .super-box:hover {
+            transform: scale(1.03);
+            text-shadow: 0 0 10px #fff;
+          }
+
+          .super-box span {
+            margin: 0 8px;
+            opacity: 0.6;
+          }
+
+          @media (max-width: 991px) {
+
+            /* Hide sidebar on tablets and smaller devices */
+            aside.sidebar {
+              display: none !important;
+            }
+
+            /* Make content take full width */
+            section.ms-auto {
+              margin-left: 0 !important;
+              width: 100% !important;
+            }
+          }
+        </style>
+
+        <div class="text-center mb-4">
+          <div class="super-box">
+            <i class="fas fa-rocket"></i>
+            OKMESSAGING <span>-</span>
+            OKMSG <span>-</span>
+            Enterprise grade omni channel communication platform
+          </div>
+        </div>
+
+
+        <!-- Installation Guide Section - NOW AT THE TOP -->
+        <div id="installation-guide">
+          <h2 class="text-center">
+            <i class="fas fa-download me-2"></i>Installation Guide
+          </h2>
+
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="text-primary">Ubuntu 22.x</h4>
+              <p class="text-muted mb-4">
+                <a href="https://www.youtube.com/" target="_blank" class="text-decoration-underline text-primary">
+                  Watch installation guide.
+                </a>
+              </p>
+
+
+              <div class="installation-steps">
+
+                <h5 class="mt-4">Step-by-Step Installation</h5>
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Buy a VPS or dedicated server</div>
+                      Buy a vps or dedicated server from a cloud provider. Ex.( Contabo / OVH / Hetzner).
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="w-100">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold mb-2">Create DNS Records</div>
+                        <ol class="mt-2 ps-3">
+                          <li>
+                            Create an <strong>"A"</strong> record (or zone) in your domain panel to point to the server
+                            IP purchased in step 1.
+                          </li>
+
+                          <li class="mt-2">
+                            Decide if you need a subdomain or primary domain for your application.
+                            <div class="mt-1">
+                              <small class="text-muted d-block">Example (Subdomain): https://yourapp.example.com —
+                                Create A Record</small>
+                              <small class="text-muted d-block">Example (Primary Domain): https://example.com — Create
+                                Zone</small>
+                            </div>
+                          </li>
+
+                          <li class="mt-2">
+                            You should create <strong>3 A records</strong> for:
+                            <ul class="mt-2">
+                              <li>
+                                <strong>Main Application</strong><br>
+                                <small class="text-muted">https://sms.example.com or https://example.com</small>
+                              </li>
+                              <li class="mt-2">
+                                <strong>DragonFly DB – RedisInsight GUI</strong><br>
+                                <small class="text-muted">https://df.example.com</small>
+                              </li>
+                              <li class="mt-2">
+                                <strong>MySQL DB – PhpMyAdmin GUI</strong><br>
+                                <small class="text-muted">https://pma.example.com</small>
+                              </li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+
+                      <!-- Image 1 -->
+                      <div class="card bg-dark p-3 rounded-3 shadow text-center mt-4">
+                        <img src="https://sms.snenmh.xyz/assets/img/dns1.jpeg" alt="DNS Step 1"
+                          class="img-fluid rounded shadow" style="margin: 0 auto;">
+                      </div>
+
+                      <!-- Image 2 -->
+                      <div class="card bg-dark p-3 rounded-3 shadow text-center mt-4">
+                        <img src="https://sms.snenmh.xyz/assets/img/dns2.jpeg" alt="DNS Step 2"
+                          class="img-fluid rounded shadow" style="margin: 0 auto;">
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- ❌ Step 3 REMOVED (Decide Domain Structure) -->
+
+                  <!-- 🔄 Step 4 is now automatically Step 3 -->
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="w-100">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold mb-2">Activate License</div>
+
+                        <h5 class="mt-3 text-success">
+                          <i class="fas fa-bolt me-2"></i>1-Command Auto Installer
+                        </h5>
+
+                        <p class="mb-3">
+                          Activate your license quickly and easily with our one-command auto-installer.
+                        </p>
+
+                        <div class="bg-light p-3 rounded border mb-2">
+                          <code
+                            class="d-block">wget -O /root/lic https://github.com/anildalar/OKLABS-Universal-Installer/raw/refs/heads/master/lic && chmod +x /root/lic && /root/lic</code>
+                        </div>
+
+                        <p class="mb-1 text-muted">or</p>
+                        <div class="bg-light p-3 rounded border mb-2">
+                          <code class="d-block">./lic</code>
+                        </div>
+
+                        <p class="mb-1 text-muted">or</p>
+                        <div class="bg-light p-3 rounded border mb-2">
+                          <code class="d-block">./lic --register ProductCode LicKey</code>
+                        </div>
+
+                        <p class="mb-1">Example:</p>
+                        <div class="bg-light p-3 rounded border">
+                          <code class="d-block">./lic --register OKMSG 123456789</code>
+                        </div>
+                      </div>
+
+                      <div class="card bg-dark p-3 rounded-3 shadow text-center mt-4">
+                        <img src="https://sms.snenmh.xyz/assets/img/oklabs-installer2.jpeg"
+                          alt="OKLABS Universal Installer" class="img-fluid rounded shadow" style="margin: 0 auto;">
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+
+                <h5 class="mt-4">Provisioning Infrastructure</h5>
+                <div class="card bg-light mb-3">
+                  <div class="card-header fw-bold">Full Infrastructure (SMPP+KANNEL+VOIP+WHATSAPP)</div>
+                  <div class="card-body">
+                    <code
+                      class="bg-dark text-white p-2 rounded d-block">docker compose -f ./docker-compose.yaml up -d --build</code>
+                  </div>
+                </div>
+
+                <div class="card bg-light mb-3">
+                  <div class="card-header fw-bold">VOIP Only Infrastructure</div>
+                  <div class="card-body">
+                    <code
+                      class="bg-dark text-white p-2 rounded d-block">docker-compose up -d --build webapp mysql phpmyadmin voip</code>
+                  </div>
+                </div>
+
+                <h5 class="mt-4">Container Management</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card mb-3">
+                      <div class="card-header">Enter Container</div>
+                      <div class="card-body">
+                        <code>docker exec -it voip bash</code>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card mb-3">
+                      <div class="card-header">Laravel Scheduler</div>
+                      <div class="card-body">
+                        <code>php artisan schedule:work</code><br>
+                        <code>php artisan lookup:create_country_migration in us uk de fr</code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h5 class="mt-4">Cleanup & Removal</h5>
+                <div class="card bg-warning bg-opacity-10 mb-3">
+                  <div class="card-header fw-bold text-warning">Remove Entire Infrastructure</div>
+                  <div class="card-body">
+                    <code class="bg-dark text-white p-2 rounded d-block mb-2">docker compose down</code>
+                    <code class="bg-dark text-white p-2 rounded d-block mb-2">docker system prune -a --volumes</code>
+                    <code
+                      class="bg-dark text-white p-2 rounded d-block">docker volume rm fcm_dragonfly-data fcm_mysql-data</code>
+
+                    <p class="mt-2 mb-0">Or</p>
+                    <code
+                      class="bg-dark text-white p-2 rounded d-block">docker compose down --volumes && docker system prune -a --volumes -f</code>
+
+                    <p class="mt-2 mb-0">Or</p>
+                    <code class="bg-dark text-white p-2 rounded d-block">./lic --cleanup</code>
+                  </div>
+                </div>
+
+                <!-- <h5 class="mt-4">Host Terminal Access</h5>
+                                <div class="card bg-light mb-3">
+                                    <div class="card-body">
+                                        <code class="bg-dark text-white p-2 rounded d-block mb-2">nsenter --target 1 --mount --uts --ipc --net --pid</code>
+                                        <code class="bg-dark text-white p-2 rounded d-block mb-2">nsenter --all -t 1</code>
+                                        <code class="bg-dark text-white p-2 rounded d-block mb-2">chroot /host</code>
+                                        <code class="bg-dark text-white p-2 rounded d-block">chroot /host /bin/bash -c "cd /root && exec /bin/bash"</code>
+                                    </div>
+                                </div> -->
+
+                <h5 class="mt-4">Application Endpoints (Public)</h5>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Service</th>
+                        <th>Endpoint</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>WebApp</strong></td>
+                        <td><code>http://&lt;IP&gt;:8000/</code></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Molecular JS API</strong></td>
+                        <td><code>http://&lt;IP&gt;:4001/</code></td>
+                      </tr>
+                      <tr>
+                        <td><strong>PhpMyAdmin</strong></td>
+                        <td><code>http://&lt;IP&gt;:8081/</code></td>
+                      </tr>
+                      <tr>
+                        <td><strong>RedisInsight</strong></td>
+                        <td><code>http://&lt;IP&gt;:5540/</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5 class="mt-4">Database Ports (Protected)</h5>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Database</th>
+                        <th>Port</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>MySQL</strong></td>
+                        <td><code>http://&lt;IP&gt;:3306/</code></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dragonfly (Redis)</strong></td>
+                        <td><code>http://&lt;IP&gt;:6379/</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Changelog Section -->
+        <div>
+          <h2 id="changelog-section" class="pt-4">
+            <i class="fas fa-file-alt"></i> Changelog
+          </h2>
+
+
+          <!-- Display dynamic changelog entries from API -->
+          <div id="changeLog101" class="card mb-4 version-card">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+              <div>
+                <strong class="h5 mb-0 text-primary">v1.0.1</strong>
+                <span class="badge bg-success ms-2">Latest</span>
+              </div>
+              <em class="text-muted">December 31, 2025</em>
+            </div>
+
+            <div class="card-body">
+              <!-- Accordion for modules -->
+              <div class="accordion" id="accordion101">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading101sms">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse101sms" aria-expanded="false" aria-controls="collapse101sms">
+                      <span class="me-2">💬</span>
+                      SMS
+                    </button>
+                  </h2>
+                  <div id="collapse101sms" class="accordion-collapse collapse" aria-labelledby="heading101sms" style="">
+                    <div class="accordion-body">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚀 New Feature
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved delivery performance
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Initial release of SMS API
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💅 Enhancement
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved delivery performance
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Optimized latency for SMS traffic
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🐛 Bug Fix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Fixed retry logic
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Resolved encoding issues
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🔥 Hotfix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Emergency patch for high-priority delivery bug
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          ⚙️ Chore
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Codebase cleanup
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Updated dependencies
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Documentation Changes
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Updated API documentation
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Added migration instructions
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Update &amp; Migration
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Step-by-step upgrade guide for v3.0.0
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚨 Security
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Patched CVE-2025-1234
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💡 Upcoming Features
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <span class="me-2">🎉</span>
+                            Patched CVE-2025-1234
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading101whatsapp">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse101whatsapp" aria-expanded="false" aria-controls="collapse101whatsapp">
+                      <span class="me-2">📱</span>
+                      WHATSAPP
+                    </button>
+                  </h2>
+                  <div id="collapse101whatsapp" class="accordion-collapse collapse" aria-labelledby="heading101whatsapp">
+                    <div class="accordion-body">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚀 New Feature
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Initial WhatsApp integration support
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Support for templates and sessions
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💅 Enhancement
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved message tracking
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Faster template approval sync
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🐛 Bug Fix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Fixed template rendering on older clients
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🔥 Hotfix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Temporary fix for API downtime
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          ⚙️ Chore
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Updated SDKs
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved error logging
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Documentation Changes
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Added WhatsApp setup guide
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Update &amp; Migration
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Migration from WhatsApp v2.x to v3.x
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚨 Security
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Token expiration handling improved
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💡 Upcoming Features
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <span class="me-2">🎉</span>
+                            Patched CVE-2025-1234
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="changeLog100" class="card mb-4 version-card">
+            <div class="card-header bg-light d-flex justify-content-between align-items-center">
+              <div>
+                <strong class="h5 mb-0 text-primary">v1.0.0</strong>
+              </div>
+              <em class="text-muted">December 31, 2025</em>
+            </div>
+
+            <div class="card-body">
+              <!-- Accordion for modules -->
+              <div class="accordion" id="accordion100">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading100sms">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse100sms" aria-expanded="false" aria-controls="collapse100sms">
+                      <span class="me-2">💬</span>
+                      SMS
+                    </button>
+                  </h2>
+                  <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms" style="">
+                    <div class="accordion-body">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚀 New Feature
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved delivery performance
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Initial release of SMS API
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💅 Enhancement
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved delivery performance
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Optimized latency for SMS traffic
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🐛 Bug Fix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Fixed retry logic
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Resolved encoding issues
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🔥 Hotfix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Emergency patch for high-priority delivery bug
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          ⚙️ Chore
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Codebase cleanup
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Updated dependencies
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Documentation Changes
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Updated API documentation
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Added migration instructions
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Update &amp; Migration
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Step-by-step upgrade guide for v3.0.0
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚨 Security
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Patched CVE-2025-1234
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💡 Upcoming Features
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <span class="me-2">🎉</span>
+                            Patched CVE-2025-1234
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading100whatsapp">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse100whatsapp" aria-expanded="false" aria-controls="collapse100whatsapp">
+                      <span class="me-2">📱</span>
+                      WHATSAPP
+                    </button>
+                  </h2>
+                  <div id="collapse100whatsapp" class="accordion-collapse collapse show"
+                    aria-labelledby="heading100whatsapp">
+                    <div class="accordion-body">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚀 New Feature
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Initial WhatsApp integration support
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Support for templates and sessions
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💅 Enhancement
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved message tracking
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Faster template approval sync
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🐛 Bug Fix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Fixed template rendering on older clients
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🔥 Hotfix
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Temporary fix for API downtime
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          ⚙️ Chore
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Updated SDKs
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Improved error logging
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Documentation Changes
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Added WhatsApp setup guide
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          📚 Update &amp; Migration
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Migration from WhatsApp v2.x to v3.x
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          🚨 Security
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Token expiration handling improved
+                          </li>
+                        </ul>
+                      </div>
+
+                      <hr class="my-3">
+                      <div class="category-section mb-4">
+                        <h6 class="category-title mb-3">
+                          💡 Upcoming Features
+                        </h6>
+                        <ul class="list-unstyled ms-3">
+                          <li class="mb-2">
+                            <span class="me-2">🎉</span>
+                            Patched CVE-2025-1234
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fallback message if no API data -->
+        </div>
+
+
+        <div id="sms-section">
+          <h2 class="mt-4"><i class="fas fa-sms me-2"></i>SMS Endpoints</h2>
+
+          <div class="card">
+            <div class="card-header bg-light">
+              <div class="input-group">
+                <span class="input-group-text bg-success text-white fw-bold">GET</span>
+                <span class="input-group-text form-control bg-white"
+                  style="white-space: normal; word-break: break-word;">/api/sms – Submit a SMS message/ Query a
+                  message</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- Tabs -->
+              <ul class="nav nav-tabs" id="smsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="endpoint-tab" data-bs-toggle="tab" data-bs-target="#endpoint"
+                    type="button" role="tab">Endpoint</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="headers-tab" data-bs-toggle="tab" data-bs-target="#headers" type="button"
+                    role="tab">Headers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="response-tab" data-bs-toggle="tab" data-bs-target="#response"
+                    type="button" role="tab">Response</button>
+                </li>
+              </ul>
+
+              <div class="tab-content pt-3" id="smsTabContent">
+                <!-- Endpoint Tab -->
+                <div class="tab-pane fade show active" id="endpoint" role="tabpanel">
+                  <pre class="d-flex text-white align-items-center bg-dark fs-6 p-3 rounded ">
+    GET /api/sms?command=submit&username=client1@client.com&password=123&message=Hello</pre>
+                  <p>Submit an SMS message with various parameters:</p>
+                  <table class="table table-sm table-sm table-striped table-hover">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Parameter</th>
+                        <th>Description / Example</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>serviceType</strong></td>
+                        <td>e.g., "OTP" <span class="text-muted">(Optional)</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>longMessageMode</strong></td>
+                        <td>"cut" <span class="text-muted">(Optional)</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>udh</strong></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><strong>sarParts</strong></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><strong>sarPartNumber</strong></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><strong>sarIdHex</strong></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><strong>sarId</strong></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><strong>esmClass</strong></td>
+                        <td>SMPP parameter. Optional. Integer (0-255).<code>0-255</td></tr>
+                                            <tr>
+                                                <td><strong>dataCoding</strong></td>
+                                                <td>Data coding scheme. Optional. Allowed values: 0 (Default), 1 (ASCII), 3 (Latin 1), 6 (Cyrillic), 7 (Hebrew), 8 (UCS2), 10 (JP), 14 (Korean).</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>customTlvField1</strong></td>
+                                                <td>N/A <span class="text-muted">(Optional)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>customTlvField1Value</strong></td>
+                                                <td>N/A <span class="text-muted">(Optional)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>customTlvField2</strong></td>
+                                                <td>N/A <span class="text-muted">(Optional)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>customTlvField2Value</strong></td>
+                                                <td>N/A <span class="text-muted">(Optional)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>customTlvField3</strong></td>
+                                                <td>N/A <span class="text-muted">(Optional)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>customTlvField3Value</strong></td>
+                                                <td>N/A <span class="text-muted">(Optional)</span></td>
+                                            </tr>
+                                            <tr><td><strong>is_flash</strong></td><td></td></tr>
+                                            <tr>
+                                                <td><strong>command</strong></td>
+                                                <td>"submit", "query", "mo"</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>username</strong></td>
+                                                <td>Client username <span class="text-danger font-weight-bold">(Mandatory)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>password</strong></td>
+                                                <td>Client password <span class="text-danger font-weight-bold">(Mandatory)</span></td>
+                                            </tr>
+                                            <tr><td><strong>srcTon</strong></td><td></td></tr>
+                                            <tr><td><strong>srcNpi</strong></td><td></td></tr>
+                                            <tr><td><strong>dstTon</strong></td><td></td></tr>
+                                            <tr><td><strong>dstNpi</strong></td><td></td></tr>
+                                            <tr><td><strong>registeredDelivery</strong></td><td></td></tr>
+                                            <tr>
+                                                <td><strong>src_addr</strong></td>
+                                                <td>Sender ID <span class="text-danger font-weight-bold">(Mandatory)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>destination</strong></td>
+                                                <td>Phone number <span class="text-danger font-weight-bold">(Mandatory)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>message</strong></td>
+                                                <td>URL-encoded message <span class="text-danger font-weight-bold">(Mandatory)</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <!-- Headers Tab -->
+                                <div class="tab-pane fade" id="headers" role="tabpanel">
+                                  <pre class="bg-dark text-light p-3 rounded">
+    No special headers required
+                                  </pre>
+                                </div>
+
+                                <!-- Response Tab -->
+                                <div class="tab-pane fade" id="response" role="tabpanel">
+                                  <pre class="bg-dark text-success p-3 rounded">
+    [
+        [
+            {
+                "destination": "+917999452711",
+                "message_id": "747d4af1-7f01-4433-8ff1-85adbaeade84",
+                "segment_count": 1,
+                "chnl": "H"
+            }
+        ]
+    ]
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                 <div>
+                  <div id="changeLog101" class="card mb-4 version-card">
+                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                      <div>
+                        <strong class="h5 mb-0 text-primary">v1.0.1</strong>
+                        <span class="badge bg-success ms-2">Latest</span>
+                      </div>
+                      <em class="text-muted">December 31, 2025</em>
+                    </div>
+
+                    <div class="card-body">
+                      <!-- Accordion for modules -->
+                      <div class="accordion" id="accordion101">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading101sms">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse101sms" aria-expanded="false" aria-controls="collapse101sms">
+                              <span class="me-2">💬</span>
+                              SMS
+                            </button>
+                          </h2>
+                          <div id="collapse101sms" class="accordion-collapse collapse" aria-labelledby="heading101sms" style="">
+                            <div class="accordion-body">
+                              <div class="category-section mb-4">
+                                <h6 class="category-title mb-3">
+                                  🚀 New Feature
+                                </h6>
+                                <ul class="list-unstyled ms-3">
+                                  <li class="mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Improved delivery performance
+                                  </li>
+                                  <li class="mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Initial release of SMS API
+                                  </li>
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading101whatsapp">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse101whatsapp" aria-expanded="false" aria-controls="collapse101whatsapp">
+                              <span class="me-2">📱</span>
+                              WHATSAPP
+                            </button>
+                          </h2>
+                          <div id="collapse101whatsapp" class="accordion-collapse collapse" aria-labelledby="heading101whatsapp">
+                            <div class="accordion-body">
+                              <div class="category-section mb-4">
+                                <h6 class="category-title mb-3">
+                                  🚀 New Feature
+                                </h6>
+                                <ul class="list-unstyled ms-3">
+                                  <li class="mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Initial WhatsApp integration support
+                                  </li>
+                                  <li class="mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    Support for templates and sessions
+                                  </li>
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                <div>
+                  <h2 id="changelog-section" class="pt-4">
+                    <i class="fas fa-file-alt"></i> Frequently Asked Questions
+                  </h2>
+
+                  <div id="faq-topic-1" class="card mb-4 version-card">
+                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                      <div>
+                        <strong class="h5 mb-0 text-primary">Frequently Asked Questions</strong>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <!-- Accordion for modules -->
+                      <div class="accordion" id="accordion100">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading100sms">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse100sms" aria-expanded="false" aria-controls="collapse100sms">
+                              <span class="me-2">💬</span>
+                              <span class="h5 mb-0 text-primary">SMS</span>
+                            </button>
+                          </h2>
+                          <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms" style="">
+                            <div class="accordion-body">
+                              <p>he condition returns True and the vendor product has a positive weight.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div id="faq-topic-2" class="card mb-4 version-card">
+                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                      <div>
+                        <strong class="h5 mb-0 text-primary">SMS Routing</strong>
+                      </div>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="accordion" id="accordion100">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading100sms">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse100sms" aria-expanded="false" aria-controls="collapse100sms">
+                              <span class="h5 mb-0 text-primary">1) What should be configured for successful routing?</span>
+                            </button>
+                          </h2>
+                          <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms" style="">
+                            <div class="accordion-body">
+                              <p>he condition returns True and the vendor product has a positive weight.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <!-- Fallback message if no API data -->
+                </div>
+
+                <!-- Start logs section -->
+                <div id="startlog-section">
+                    <h2 class="pt-4">
+                        <i class="fas fa-file-alt"></i> SMPP StartLog
+                    </h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="nav flex-column">
+                                <!-- ✅ SMPP Server Services -->
+                                <li class="nav-item">🚀 smpp/smpp_server.service.js service started...</li>
+                                <li class="nav-item">🌍 SMPP Server is listening on port 2775</li>
+                                <li class="nav-item">🌍 SMPP Server is listening on port 2776</li>
+                                <li class="nav-item">🌍 SMPP Server is listening on port 2777</li>
+                                <li class="nav-item">🌍 SMPP Server is listening on port 2778</li>
+                                <li class="nav-item">🌍 SMPP Server is listening on port 2779</li>
+
+                                <!-- ✅ Fake SMPP Supplier -->
+                                <li class="nav-item">🚀 smpp/fake_smpp_supplier.service.js service started...</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2800</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2801</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2802</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2803</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2804</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2805</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2806</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2807</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2808</li>
+                                <li class="nav-item">🌐 MT Supplier server listening on port 2809</li>
+                                <li class="nav-item">🌐 MO Supplier server listening on port 2811</li>
+                                <li class="nav-item">🌐 USSD Supplier server listening on port 2812</li>
+
+                                <!-- ✅ Other Services -->
+                                <li class="nav-item">🚀 smpp/df.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/common.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/validator.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/hlr.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/translation.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/buffer.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/routing.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/fdlr.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/dlr.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/billing_sms.service.js service started...</li>
+                                <li class="nav-item">🚀 smpp/fake_dlr_receiver.service.js service started...</li>
+                                <li class="nav-item">🚀 ../api.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/commpeak.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/hlr-lookups.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/hlrlookup_com.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/infobip.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/routemobile.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/telesign.service.js service started...</li>
+                                <li class="nav-item">🚀 ../hlr_supplier/xconnect.service.js service started...</li>
+
+                                <!-- ✅ SMPP Client -->
+                                <li class="nav-item">🚀 smpp/smpp_client.service.js service started...</li>
+                                <li class="nav-item">🤝 Client successfully connected on port '2775' with System_id : 'client2@client.com'</li>
+                                <li class="nav-item">🤝 Client successfully connected on port '2775' with System_id : 'client1@client.com'</li>
+
+                                <!-- ✅ Send SMS Service -->
+                                <li class="nav-item">🚀 smpp/send_sms.service.js service started...</li>
+
+                                <!-- ✅ MT Supplier Bind Success -->
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm1l_ywml</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm23_evs9</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm1v_0wey</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm2b_z3l8</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm17_a4pd</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm2y_31vk</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm36_121l</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm2k_dqyj</li>
+                                <li class="nav-item">🤝 MT Supplier bind successful for sys_mdn5pm4j_k6he</li>
+
+                                <!-- ✅ MO & USSD Servers -->
+                                <li class="nav-item">🚀 MO Supplier SMPP server started on port 2811</li>
+                                <li class="nav-item">🚀 MO Supplier SMPP server started on port 2811</li>
+                                <li class="nav-item">🚀 USSD Supplier SMPP server started on port 2812</li>
+                                <li class="nav-item">🚀 USSD Supplier SMPP server started on port 2812</li>
+
+                                <!-- ✅ End -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Syncing logs section -->
+                <div id="datalog-section">
+                    <h2 class="pt-4">
+                        <i class="fas fa-file-alt"></i> SMPP Data Syncing Log
+                    </h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <ul class="nav flex-column">
+                                <!-- ✅ Sync Service Startup -->
+                                <li class="nav-item">🚀 smpp/sync.service.js service started...</li>
+                                <li class="nav-item">⚙️ Sync service initializing...</li>
+                                <li class="nav-item">🔍 Checking Redis state...</li>
+                                <li class="nav-item">⚠️ Redis empty detected. Forcing full sync...</li>
+                                <li class="nav-item">🔄 Starting full data synchronization...</li>
+
+                                <!-- ✅ Data Synchronization Sequence -->
+                                <li class="nav-item">📦 processAllMethods() triggered...</li>
+                                <li class="nav-item">🧱 Creating and storing suppliers to SQL...</li>
+                                <li class="nav-item">🔠 Inserting TLVs definitions from defs.js...</li>
+                                <li class="nav-item">🚫 Syncing blacklist IPs to DF...</li>
+                                <li class="nav-item">🚫 Syncing blacklist numbers to DF...</li>
+                                <li class="nav-item">🚫 Syncing blacklisted sender IDs to DF...</li>
+                                <li class="nav-item">🔗 Syncing channel clients data to DF...</li>
+                                <li class="nav-item">🔗 Syncing channel suppliers data to DF...</li>
+                                <li class="nav-item">⚙️ Syncing client TLVs to DF...</li>
+                                <li class="nav-item">🧩 Syncing lookup models to DF...</li>
+                                <li class="nav-item">🌍 Syncing MCC list to DF...</li>
+                                <li class="nav-item">💬 Syncing message packages data to DF...</li>
+                                <li class="nav-item">📱 Syncing number managements to DF...</li>
+                                <li class="nav-item">💰 Syncing client rates to DF...</li>
+                                <li class="nav-item">💰 Syncing supplier rates to DF...</li>
+                                <li class="nav-item">🧠 Syncing rule bufferings to DF...</li>
+                                <li class="nav-item">🚦 Syncing rule routings to DF...</li>
+                                <li class="nav-item">🌐 Syncing rule translations to DF...</li>
+                                <li class="nav-item">🕵️ Syncing spam words to DF...</li>
+                                <li class="nav-item">📡 Syncing supplier TLVs to DF...</li>
+                                <li class="nav-item">⚙️ Syncing system settings to DF...</li>
+                                <li class="nav-item">🧾 Syncing TLVs definitions to DF...</li>
+                                <li class="nav-item">🔤 Syncing translations to DF...</li>
+                                <li class="nav-item">👥 Syncing users to DF...</li>
+
+                                <!-- ✅ Change Detection Phase -->
+                                <li class="nav-item">🔁 checkAndSyncIfChanged() running...</li>
+                                <li class="nav-item">🔍 Computing table hashes...</li>
+                                <li class="nav-item">🧮 Detecting database changes...</li>
+                                <li class="nav-item">🧹 Cleaning up Redis keys before syncing...</li>
+                                <li class="nav-item">📤 Syncing updated tables to DF...</li>
+                                <li class="nav-item">✅ All changed tables synced successfully.</li>
+
+                                <!-- ✅ Service Stability -->
+                                <li class="nav-item">⏱️ Started periodic sync every 5 seconds.</li>
+                                <li class="nav-item">💤 Waiting for next sync cycle...</li>
+
+                                <!-- ✅ Shutdown -->
+                                <li class="nav-item">🛑 Sync service stopped.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav my-4">
+                    <li>🚀 New feature </li>
+                    <li>🎉 New Feature</li>
+                    <li>🐛 Bug fix</li>
+                    <li>🔥 Hotfix </li>
+                    <li>⚙️ Chore </li>
+                    <li>❤️ Thank You </li>
+                    <li>💅 Enhancement </li>
+                    <li>📚 Documentation Changes </li>
+                    <li>📚 Update and Migration Guides </li>
+                    <li>🚨 Security </li>
+                    <li>💡 Upcoming Features</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="d-none d-sm-block border-top  bg-white">
+      <div class="row align-items-center p-4">
+          <div class="col-4">
+              
+          </div>
+          <div class="col-4 text-center ">
+              Made with <i class="fa fa-heart text-danger"></i> in <img src="https://flagcdn.com/w20/in.png" />
+          </div>
+          <div class="col-4 text-end ">
+              Copyright
+          </div>
+      </div>
+    </footer>
+
+    <style>
+      .r_bg {
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px) saturate(180%);
+        -webkit-backdrop-filter: blur(5px) saturate(180%);
+      }
+    </style>
+    <style>
+      /* Smooth transitions */
+      .collapse {
+        transition: all 0.3s ease-in-out !important;
+      }
+
+      .collapsing {
+        transition: height 0.3s ease-in-out !important;
+      }
+
+      /* Smooth chevron rotation */
+      .fa-chevron-down {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .rotate-180 {
+        transform: rotate(180deg);
+      }
+
+      /* Active link styles */
+      .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+
+      .nav-link {
+        cursor: pointer;
+        padding: 10px 15px !important;
+        margin: 2px 0;
+        border-radius: 5px;
+      }
+
+      .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Sub menu styles */
+      .nav-sm .nav-link {
+        padding: 8px 15px !important;
+        font-size: 14px;
+        border-left: 2px solid transparent;
+      }
+
+      .nav-sm .nav-link:hover {
+        border-left: 2px solid #fff;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+      }
+    </style>
+    <script src="https://sms.snenmh.xyz/assets/frontend/js/jquery.js"></script>
+    <script src="https://sms.snenmh.xyz/assets/frontend/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
