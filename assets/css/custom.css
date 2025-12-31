@@ -22,6 +22,49 @@
 /* header.sticky-top {
         z-index: 1051;
     } */
+.app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1050;
+    background-color: #001C46;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.header-left i {
+    color: #faa21c;
+}
+.header-center {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    text-align: center;
+    white-space: nowrap;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+aside.sidebar {
+    top: 64px;
+    height: calc(100vh - 64px);
+}
 
 .r_bg {
     background: rgba(0, 0, 0, 0.4);
@@ -99,3 +142,62 @@
             width: 100% !important;
         }
     }
+
+.r_bg {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+}
+/* Smooth transitions */
+.collapse {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.collapsing {
+    transition: height 0.3s ease-in-out !important;
+}
+
+/* Smooth chevron rotation */
+.fa-chevron-down {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Active link styles */
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.nav-link {
+    cursor: pointer;
+    padding: 10px 15px !important;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sub menu styles */
+.nav-sm .nav-link {
+    padding: 8px 15px !important;
+    font-size: 14px;
+    border-left: 2px solid transparent;
+}
+
+.nav-sm .nav-link:hover {
+    border-left: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}

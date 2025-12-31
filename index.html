@@ -4,96 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- CSRF Token -->
-  <meta name="csrf-token" content="8LNrNzJPERxvx1Qp4bcbT1P3XcUSJR4PmHTxMDtx">
   <title>OKMESSAGING - Enterprise grade omni channel communication platform</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" type="image/x-icon" href="assets\images\oklabs.jpeg">
-
-  <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/custom.css">
-  <!-- <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- NProgress -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css"
-    integrity="sha512-DanfxWBasQtq+RtkNAEDTdX4Q6BPCJQ/kexi/RftcP0BcA4NIJPSi7i31Vl+Yl5OCfgZkdJmCqz+byTOIIRboQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <div class="body-overlay"></div>
-  <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg">
-        <div class="modal-header bg-gradient-primary text-white">
-          <h5 class="modal-title text-white" id="otpModalLabel">Verify Your Identity</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-4">
-          <div class="text-center mb-4">
-            <div class="bg-light p-3 rounded-circle d-inline-block">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" class="bi bi-shield-lock"
-                viewBox="0 0 16 16">
-                <path
-                  d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.73 10.73 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.73 10.73 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.78 11.78 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.78 11.78 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56z" />
-                <path
-                  d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z" />
-              </svg>
-            </div>
-            <p class="text-muted mt-2">We've sent a 6-digit code to your telegram group</p>
-          </div>
-
-          <form id="verifyOtpForm">
-            <input type="hidden" name="_token" value="8LNrNzJPERxvx1Qp4bcbT1P3XcUSJR4PmHTxMDtx" autocomplete="off">
-            <div class="mb-4">
-              <label for="otp" class="form-label fw-bold">Verification Code</label>
-              <div class="d-flex justify-content-center gap-2">
-                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
-                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
-                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
-                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
-                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
-                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
-                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
-                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
-                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
-                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
-                <input type="text" class="form-control text-center otp-digit" maxlength="1" pattern="[0-9]*"
-                  inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
-              </div>
-              <input type="hidden" id="otp" name="otp">
-            </div>
-
-            <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm">
-                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-                Verify & Continue
-              </button>
-            </div>
-
-            <div class="text-center mt-3">
-              <a href="#" id="resendOtp" class="text-decoration-none">Didn't receive code?
-                Resend</a>
-              <div id="resendTimer" class="text-muted small mt-1 d-none">Resend available in <span
-                  id="countdown">60</span>s</div>
-            </div>
-          </form>
-        </div>
-      </div>
+  <header class="app-header">
+    <div class="header-left">
+      <i class="fas fa-rocket"></i>
+      <span class="brand">OKMESSAGING</span>
+      <span class="brand-short">OKMSG</span>
     </div>
-  </div>
-  <!-- back-to-top-start  -->
-  <button class="scroll-top scroll-to-target" data-target="html">
-    <i class="far fa-angle-double-up"></i>
-  </button>
-  <!-- back-to-top-end  -->
 
+    <div class="header-center">
+      Enterprise grade omni channel communication platform
+    </div>
+
+    <div class="header-right">
+      <strong>v1.0.1</strong>
+      <span class="badge bg-success">Latest</span>
+    </div>
+  </header>
   <main class="d-flex">
     <aside class="sidebar border-end fixed-top px-3"
       style="width: 250px; height: 100vh; padding-top: 20px; background: #001C46; color: #FFF; overflow-y: auto;">
@@ -227,19 +164,16 @@
     </aside>
 
     <section class="ms-auto overflow-auto" style="margin-left: 220px; width: calc(100% - 250px);">
-      <div class="p-4">
-        <style>
-          
-        </style>
+      <div class="p-4 mt-5 pt-5">
 
-        <div class="text-center mb-4">
+        <!-- <div class="text-center mb-4 mt-4">
           <div class="super-box">
             <i class="fas fa-rocket"></i>
             OKMESSAGING <span>-</span>
             OKMSG <span>-</span>
             Enterprise grade omni channel communication platform
           </div>
-        </div>
+        </div> -->
 
 
         <!-- Installation Guide Section - NOW AT THE TOP -->
@@ -518,7 +452,7 @@
                       SMS
                     </button>
                   </h2>
-                  <div id="collapse101sms" class="accordion-collapse collapse" aria-labelledby="heading101sms" style="">
+                  <div id="collapse101sms" class="accordion-collapse collapse" aria-labelledby="heading101sms">
                     <div class="accordion-body">
                       <div class="category-section mb-4">
                         <h6 class="category-title mb-3">
@@ -822,7 +756,7 @@
                       SMS
                     </button>
                   </h2>
-                  <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms" style="">
+                  <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms">
                     <div class="accordion-body">
                       <div class="category-section mb-4">
                         <h6 class="category-title mb-3">
@@ -1297,7 +1231,7 @@
                               SMS
                             </button>
                           </h2>
-                          <div id="collapse101sms" class="accordion-collapse collapse" aria-labelledby="heading101sms" style="">
+                          <div id="collapse101sms" class="accordion-collapse collapse" aria-labelledby="heading101sms">
                             <div class="accordion-body">
                               <div class="category-section mb-4">
                                 <h6 class="category-title mb-3">
@@ -1514,72 +1448,8 @@
           </div>
       </div>
     </footer>
-
-    <style>
-      .r_bg {
-        background: rgba(0, 0, 0, 0.4);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(5px) saturate(180%);
-        -webkit-backdrop-filter: blur(5px) saturate(180%);
-      }
-    </style>
-    <style>
-      /* Smooth transitions */
-      .collapse {
-        transition: all 0.3s ease-in-out !important;
-      }
-
-      .collapsing {
-        transition: height 0.3s ease-in-out !important;
-      }
-
-      /* Smooth chevron rotation */
-      .fa-chevron-down {
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .rotate-180 {
-        transform: rotate(180deg);
-      }
-
-      /* Active link styles */
-      .nav-link.active {
-        background-color: rgba(255, 255, 255, 0.2) !important;
-        border-radius: 5px;
-        font-weight: 600;
-      }
-
-      .nav-link {
-        cursor: pointer;
-        padding: 10px 15px !important;
-        margin: 2px 0;
-        border-radius: 5px;
-      }
-
-      .nav-link:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-      }
-
-      /* Smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-
-      /* Sub menu styles */
-      .nav-sm .nav-link {
-        padding: 8px 15px !important;
-        font-size: 14px;
-        border-left: 2px solid transparent;
-      }
-
-      .nav-sm .nav-link:hover {
-        border-left: 2px solid #fff;
-        background-color: rgba(255, 255, 255, 0.05) !important;
-      }
-    </style>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://sms.snenmh.xyz/assets/frontend/js/jquery.js"></script>
-    <script src="https://sms.snenmh.xyz/assets/frontend/js/bootstrap.bundle.min.js"></script> -->
+    <script></script>
   </body>
 </html>
