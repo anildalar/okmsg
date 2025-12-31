@@ -6,29 +6,17 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="8LNrNzJPERxvx1Qp4bcbT1P3XcUSJR4PmHTxMDtx">
-  <title>OKMESSAGING</title>
-
-
-  <script type="application/ld+json">{"@context":"https://schema.org"}</script>
+  <title>OKMESSAGING - Enterprise grade omni channel communication platform</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Place favicon.ico in the root directory -->
-  <link rel="shortcut icon" type="image/x-icon" href="https://sms.snenmh.xyz/uploads/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets\images\oklabs.jpeg">
 
   <!-- CSS here -->
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/animate.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/custom-animation.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/swiper-bundle.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/slick.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/nice-select.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/flaticon.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/meanmenu.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/font-awesome-pro.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/magnific-popup.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/spacing.css">
-  <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/style.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- <link rel="stylesheet" href="https://sms.snenmh.xyz/assets/frontend/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,39 +24,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css"
     integrity="sha512-DanfxWBasQtq+RtkNAEDTdX4Q6BPCJQ/kexi/RftcP0BcA4NIJPSi7i31Vl+Yl5OCfgZkdJmCqz+byTOIIRboQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    /* Override NProgress bar color */
-    #nprogress .bar {
-      height: 2px;
-      z-index: 100000;
-      background: #faa21c !important;
-    }
-
-    /* Override blur effect color */
-    #nprogress .peg {
-      box-shadow: 0 0 10px #b0de37, 0 0 5px #b0de37 !important;
-    }
-
-    #nprogress .spinner-icon {
-      display: none;
-    }
-  </style>
-  <style>
-    .r_text>li>a {
-      color: #000 !important;
-    }
-
-    /* header.sticky-top {
-            z-index: 1051;
-        } */
-
-    .r_bg {
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
-    }
-  </style>
 </head>
 
 <body>
@@ -249,7 +204,7 @@
                 <a class="nav-link text-white" href="#faq-topic-2"
                   onclick="scrollToSection('faq-topic-2', event)">
                   <i class="fas fa-envelope me-2"></i>
-                  <span>SMS Routing</span>
+                  <span>WhatsApp</span>
                 </a>
               </li>
             </ul>
@@ -274,76 +229,7 @@
     <section class="ms-auto overflow-auto" style="margin-left: 220px; width: calc(100% - 250px);">
       <div class="p-4">
         <style>
-          @keyframes borderGlow {
-            0% {
-              border-color: #2b5876;
-              box-shadow: 0 0 10px #2b5876;
-            }
-
-            50% {
-              border-color: #4e4376;
-              box-shadow: 0 0 20px #4e4376;
-            }
-
-            100% {
-              border-color: #2b5876;
-              box-shadow: 0 0 10px #2b5876;
-            }
-          }
-
-          @keyframes bgFlow {
-            0% {
-              background-position: 0% 50%;
-            }
-
-            50% {
-              background-position: 100% 50%;
-            }
-
-            100% {
-              background-position: 0% 50%;
-            }
-          }
-
-          .super-box {
-            display: inline-block;
-            padding: 12px 25px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 12px;
-            border: 2px solid;
-            color: #fff;
-            background: linear-gradient(90deg, #2b5876, #4e4376, #2b5876);
-            background-size: 300% 300%;
-            animation: bgFlow 6s infinite, borderGlow 2s infinite;
-            transition: 0.3s;
-            letter-spacing: 0.3px;
-            text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
-          }
-
-          .super-box:hover {
-            transform: scale(1.03);
-            text-shadow: 0 0 10px #fff;
-          }
-
-          .super-box span {
-            margin: 0 8px;
-            opacity: 0.6;
-          }
-
-          @media (max-width: 991px) {
-
-            /* Hide sidebar on tablets and smaller devices */
-            aside.sidebar {
-              display: none !important;
-            }
-
-            /* Make content take full width */
-            section.ms-auto {
-              margin-left: 0 !important;
-              width: 100% !important;
-            }
-          }
+          
         </style>
 
         <div class="text-center mb-4">
@@ -1391,21 +1277,21 @@
                 </div>
 
                 <!-- FAQ Section -->
-                 <div>
-                  <div id="changeLog101" class="card mb-4 version-card">
+                 <div class="pt-4">
+                  <div id="" class="card mb-4 version-card">
                     <div class="card-header bg-light d-flex justify-content-between align-items-center">
                       <div>
-                        <strong class="h5 mb-0 text-primary">v1.0.1</strong>
-                        <span class="badge bg-success ms-2">Latest</span>
+                        <strong class="h5 mb-0 text-primary">
+                          <i class="fas fa-file-alt"></i> Frequently Asked Questions
+                        </strong>
                       </div>
-                      <em class="text-muted">December 31, 2025</em>
                     </div>
 
                     <div class="card-body">
                       <!-- Accordion for modules -->
                       <div class="accordion" id="accordion101">
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="heading101sms">
+                          <h2 class="accordion-header" id="faq-topic-1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse101sms" aria-expanded="false" aria-controls="collapse101sms">
                               <span class="me-2">💬</span>
                               SMS
@@ -1415,16 +1301,12 @@
                             <div class="accordion-body">
                               <div class="category-section mb-4">
                                 <h6 class="category-title mb-3">
-                                  🚀 New Feature
+                                  1) What should be configured for successful routing?
                                 </h6>
                                 <ul class="list-unstyled ms-3">
                                   <li class="mb-2">
                                     <i class="fas fa-check-circle text-success me-2"></i>
-                                    Improved delivery performance
-                                  </li>
-                                  <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Initial release of SMS API
+                                    The condition returns True and the vendor product has a positive weight.
                                   </li>
                                 </ul>
                               </div>
@@ -1433,7 +1315,7 @@
                           </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="heading101whatsapp">
+                          <h2 class="accordion-header" id="faq-topic-2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse101whatsapp" aria-expanded="false" aria-controls="collapse101whatsapp">
                               <span class="me-2">📱</span>
                               WHATSAPP
@@ -1443,16 +1325,12 @@
                             <div class="accordion-body">
                               <div class="category-section mb-4">
                                 <h6 class="category-title mb-3">
-                                  🚀 New Feature
+                                  1) What should be configured for successful routing?
                                 </h6>
                                 <ul class="list-unstyled ms-3">
                                   <li class="mb-2">
                                     <i class="fas fa-check-circle text-success me-2"></i>
                                     Initial WhatsApp integration support
-                                  </li>
-                                  <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Support for templates and sessions
                                   </li>
                                 </ul>
                               </div>
@@ -1464,66 +1342,6 @@
                     </div>
                   </div>
                  </div>
-                <div>
-                  <h2 id="changelog-section" class="pt-4">
-                    <i class="fas fa-file-alt"></i> Frequently Asked Questions
-                  </h2>
-
-                  <div id="faq-topic-1" class="card mb-4 version-card">
-                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
-                      <div>
-                        <strong class="h5 mb-0 text-primary">Frequently Asked Questions</strong>
-                      </div>
-                    </div>
-
-                    <div class="card-body">
-                      <!-- Accordion for modules -->
-                      <div class="accordion" id="accordion100">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="heading100sms">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse100sms" aria-expanded="false" aria-controls="collapse100sms">
-                              <span class="me-2">💬</span>
-                              <span class="h5 mb-0 text-primary">SMS</span>
-                            </button>
-                          </h2>
-                          <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms" style="">
-                            <div class="accordion-body">
-                              <p>he condition returns True and the vendor product has a positive weight.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <div id="faq-topic-2" class="card mb-4 version-card">
-                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
-                      <div>
-                        <strong class="h5 mb-0 text-primary">SMS Routing</strong>
-                      </div>
-                    </div>
-
-                    <div class="card-body">
-                      <div class="accordion" id="accordion100">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="heading100sms">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse100sms" aria-expanded="false" aria-controls="collapse100sms">
-                              <span class="h5 mb-0 text-primary">1) What should be configured for successful routing?</span>
-                            </button>
-                          </h2>
-                          <div id="collapse100sms" class="accordion-collapse collapse" aria-labelledby="heading100sms" style="">
-                            <div class="accordion-body">
-                              <p>he condition returns True and the vendor product has a positive weight.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-
-                  <!-- Fallback message if no API data -->
-                </div>
 
                 <!-- Start logs section -->
                 <div id="startlog-section">
@@ -1759,7 +1577,9 @@
         background-color: rgba(255, 255, 255, 0.05) !important;
       }
     </style>
-    <script src="https://sms.snenmh.xyz/assets/frontend/js/jquery.js"></script>
-    <script src="https://sms.snenmh.xyz/assets/frontend/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://sms.snenmh.xyz/assets/frontend/js/jquery.js"></script>
+    <script src="https://sms.snenmh.xyz/assets/frontend/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>
